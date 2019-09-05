@@ -21,7 +21,7 @@ def max_2_sum arr
        swapped = false
         0.upto(arr.size-2) do |i|
         if arr[i] > arr[i+1]
-         arr[i], arr[i+1] = arr[i+1], arr[i] # swap values
+         arr[i], arr[i+1] = arr[i+1], arr[i]
         swapped = true
         end
         end
@@ -30,7 +30,9 @@ def max_2_sum arr
   end
 end
 
+
 # Part III
 def sum_to_n? arr, n
-  # YOUR CODE HERE
+ return false if arr.empty? && n.zero?
+  arr.combination(2).any? {|x, y| x + y == n }
 end
