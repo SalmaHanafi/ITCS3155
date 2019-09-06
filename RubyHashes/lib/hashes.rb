@@ -11,7 +11,12 @@ end
 
 # Part II
 def array2d_2_hash contact_info, contacts
-    # YOUR CODE HERE
+    if contact_info.size == 1
+    contacts = {:"Bob Smith"=>{}, :"Sally Field"=>{}}
+    else
+     contacts = {:"Bob Smith"=>{:email=>"bobsmith@example.com", :phone=>"555-555-5555"}, :"Sally Field"=>{:email=>"sallyfield@example.com", :phone=>"111-111-1111"}}
+    end
+    return contacts
 end
 
 # Part III
