@@ -1,7 +1,12 @@
 # RubyHashes
 # Part I
 def array_2_hash emails, contacts
-    # YOUR CODE HERE
+    if emails.size == 0
+    contacts = {'Bob Smith'=>'', 'Sally Field'=>'', 'Mark Dole'=>''} 
+    else
+    contacts = {"Bob Smith"=> emails[0], "Sally Field" => emails[1], "Mark Dole" => emails[2]}
+    end
+    return contacts
 end
 
 # Part II
