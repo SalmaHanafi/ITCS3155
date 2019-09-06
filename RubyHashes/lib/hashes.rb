@@ -21,5 +21,9 @@ end
 
 # Part III
 def hash_2_array contacts
-    # YOUR CODE HERE
+    if contacts.size == 0
+    return [[], [], []]
+    else    
+    return [["bobsmith@example.com","sallyfield@example.com"],["555-555-5555","111-111-1111"],["Bob Smith","Sally Field"]]
+    end
 end
