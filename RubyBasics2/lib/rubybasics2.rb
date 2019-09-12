@@ -7,7 +7,19 @@ end
 
 # Part II
 def starts_with_consonant? s
-  # YOUR CODE HERE
+  if s.chars.first =~ /[A-Za-z]/
+    x = s.chars.first.downcase
+    if x == 'a' || x == 'i' || x == 'o' || x == 'u' || x == 'e' 
+      return false
+    else
+      return true
+    end
+  else
+    return false
+  end
+    
+  
+ 
 end
 
 # Part III
