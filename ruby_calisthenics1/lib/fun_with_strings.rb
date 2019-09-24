@@ -14,7 +14,8 @@ module FunWithStrings
     counter
   end
   def anagram_groups
-    # your code here
+    words = self.scan(/\w+/)
+    words.group_by { |word| word.downcase.chars.sort }.values
   end
 end
 
