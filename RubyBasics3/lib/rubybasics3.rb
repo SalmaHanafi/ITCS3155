@@ -15,6 +15,11 @@ class BookInStock
         raise ArgumentError;
      end
     end
+    
+    def price_as_string
+        ans = "$%.2f" % price;
+        return ans;
+    end
    
 # YOUR CODE HERE
 end
