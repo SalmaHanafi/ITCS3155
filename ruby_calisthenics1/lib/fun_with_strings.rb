@@ -8,7 +8,10 @@ module FunWithStrings
     end
   end
   def count_words
-    # your code here
+    counter = Hash.new(0)
+    words = self.downcase.scan(/\w+/)
+    words.each { |word| counter[word] += 1 }
+    counter
   end
   def anagram_groups
     # your code here
