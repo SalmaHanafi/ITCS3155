@@ -11,6 +11,10 @@ class BookInStock
     def initialize(isbn = "", price = 0.0)
         @isbn = isbn;
         @price = price;
+     if isbn == "" or price <= 0
+        raise ArgumentError;
+     end
     end
+   
 # YOUR CODE HERE
 end
