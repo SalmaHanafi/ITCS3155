@@ -2,13 +2,14 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-input[type= text]{
+input [type = button], input[type= text]{
  
  width : 70%;
  height : 200px;
  padding : 12px 12px;
  border : 2px solid #ccc ;
- 
+ color : white;
  background-color: #0000FF;
  resize : none;
+ cursor: pointer;
 }
